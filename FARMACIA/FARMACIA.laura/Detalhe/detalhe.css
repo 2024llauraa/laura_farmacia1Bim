@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .top-bar {
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .left-icons img {
+    height: 4vh;
+    margin-right: 2vw;
+    cursor: pointer;
+  }
+  
+  .right-title .farmacia-titulo {
+    font-family: 'Chewy', cursive;
+    font-size: 3vh;
+    color: #444;
+  }
+  
+  .detalhe-produto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    padding: 2vh;
+  }
+  
+  .detalhe-imagem {
+    max-width: 90vw;
+    max-height: 50vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 1vh;
+    box-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+  }
+
+  .resumo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+    
+  .nome-detalhe {
+    font-size: 3vh;
+    margin-top: 2vh;
+    text-align: center;
+  }
+  
+  .preco-detalhe {
+    font-size: 4.5vh;
+    color: #2c7;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  
+  #btn-adicionar {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 1vh;
+    padding: 2vh 4vw;
+    font-size: 4vh;
+    cursor: pointer;
+    margin-top: 3vh;
+    align-self: center; /* centraliza dentro do flex container */
+    margin-right: 0;    /* remove margem direita */
+  }
+  
+  
+  .mensagem-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 2vh 3vw;
+    border-radius: 1vh;
+    box-shadow: 0 0 1vh rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+    font-size: 2vh;
+    text-align: center;
+  }
+  
+  .btn-fechar {
+    position: absolute;
+    top: 0.5vh;
+    right: 0.5vw;
+    border: none;
+    background: transparent;
+    font-size: 2vh;
+    cursor: pointer;
+  }
+  
